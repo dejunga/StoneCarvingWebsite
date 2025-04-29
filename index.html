@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FINALNA OBRADA KAMENA</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+      <!-- Intro -->
+      <div id="intro">
+        <h1>FINALNA OBRADA KAMENA</h1>
+        <p>
+          Osnovani 2001. godine, naša tvrtka ima dugu tradiciju i uspješno
+          posluje već više od dva desetljeća, pružajući vrhunsku uslugu i
+          proizvode našim klijentima.
+        </p>
+        <ul class="actions">
+          <li>
+            <a
+              href="#about"
+              class="button icon solid solo fa-arrow-down scrolly"
+              >Nastavi</a
+            >
+          </li>
+        </ul>
+      </div>
+      <nav id="nav">
+        <ul class="links">
+          <li class="active"><a href="index.html">FINALNA OBRADA KAMENA</a></li>
+          <li class="nav-item-kontakt">
+            <a href="#footer" class="button scrolly">KONTAKT</a>
+          </li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.facebook.com/ljiljanaderke"
+              class="icon brands fa-facebook-f"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- About Company -->
+        <section id="about" class="about">
+          <header class="major">
+            <h2>O nama</h2>
+            <p>
+              Osnovani 2001. godine, naša tvrtka ima dugu tradiciju i uspješno
+              posluje već više od dva desetljeća, pružajući vrhunsku uslugu i
+              proizvode našim klijentima.
+            </p>
+          </header>
+          <div class="stone-gallery">
+            <header class="major">
+              <h2>Vrste kamena</h2>
+            </header>
+
+            <div class="stone-images" id="stone-images">
+              <!-- Dynamically loaded stone images -->
+            </div>
+          </div>
+          <div class="product-gallery">
+            <header class="major">
+              <h2>Naši proizvodi</h2>
+            </header>
+            <div class="product-images" id="product-images">
+              <!-- Dynamically loaded product images -->
+            </div>
+          </div>
+
+          <div id="main">
+            <!-- Swiper Container -->
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- Slides will be injected here -->
+              </div>
+
+              <!-- Optional controls -->
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <div class="footer-container">
+              <header class="major">
+                <h2>KONTAKT</h2>
+              </header>
+              <div class="map-container">
+                <!-- Reactive map -->
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.210823320066!2d17.16074177602251!3d45.706807271078965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4767bb7d2880148d%3A0x75b4f8d5be23f8f3!2sUl.%20Ivana%20Nepomuka%20Jemer%C5%A1i%C4%87a%2068%2C%2043290%2C%20Grubi%C5%A1no%20Polje!5e0!3m2!1sen!2shr!4v1745849218526!5m2!1sen!2shr"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <div class="contact-details">
+                <p>
+                  <span class="label">Adresa:</span>
+                  <span class="value"
+                    >Ivana Nepomuka Jemeršića 68, Grubišno Polje</span
+                  >
+                </p>
+                <p>
+                  <span class="label">Mobitel:</span>
+                  <span class="value">+385 98 123 4567</span>
+                </p>
+                <p>
+                  <span class="label">Email:</span>
+                  <span class="value">info@klesarstvo.hr</span>
+                </p>
+              </div>
+            </div>
+          </footer>
+        </section>
+      </div>
+
+      <style>
+        nav#nav .links li.nav-item-kontakt > a.button.scrolly {
+          display: flex; /* make the <a> a flex container */
+          align-items: center; /* vertical centering */
+          justify-content: center; /* horizontal centering */
+          width: 140%;
+          height: 100%;
+          box-sizing: border-box; /* include any padding/border in size */
+        }
+
+        .product-gallery > header.major {
+          margin-top: 3rem; /* adjust size to taste */
+        }
+        .contact-details p {
+          margin: 0.5rem 0;
+          font-size: 200%;
+          line-height: 1.6;
+          color: #333;
+        }
+
+        /* Bold labels */
+        .contact-details .label {
+          font-weight: 1000; /* extra-strong weight */
+          color: #222; /* slightly darker if you like */
+          margin-right: 0.25rem;
+        }
+
+        /* Lighter values */
+        .contact-details .value {
+          font-weight: 900; /* normal weight */
+          color: #555; /* slightly lighter shade */
+        }
+
+        #wrapper {
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+        }
+
+        .footer-container > header.major {
+          flex: 0 0 100%; /* take up 100% of the row */
+          text-align: center; /* center the h2 inside it */
+          margin-bottom: 1rem; /* optional spacing */
+        }
+
+        .footer-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: flex-start;
+          gap: 1rem;
+          max-width: 900px;
+          margin: 0 auto;
+        }
+        .footer-container h3 {
+          text-align: center;
+          width: 100%;
+        }
+        .footer-container .map-container,
+        .footer-container .contact-details {
+          flex: 1 1 300px;
+        }
+
+        #footer {
+          /* static positioning so it never overlaps */
+          padding: 2rem 1rem;
+          background: #f5f5f5;
+          text-align: center;
+          box-sizing: border-box;
+        }
+
+        .map-container iframe {
+          width: 100%;
+          height: 250px;
+          border: 0;
+        }
+
+        /* CSS for the image gallery */
+        * {
+          box-sizing: border-box;
+        }
+
+        /* Position the image container (needed to position the left and right arrows) */
+        .container {
+          position: relative;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+          display: none;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+          cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 40%;
+          width: auto;
+          padding: 16px;
+          margin-top: -50px;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+
+        /* Container for image text */
+        .caption-container {
+          text-align: center;
+          background-color: #222;
+          padding: 2px 16px;
+          color: white;
+        }
+
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Six columns side by side */
+        .column {
+          float: left;
+          width: 16.66%;
+        }
+
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+          opacity: 0.6;
+        }
+
+        .active,
+        .demo:hover {
+          opacity: 1;
+        }
+      </style>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Slider functionality -->
+    <script>
+      // Array of image data
+      const images = [
+        {
+          full: "images/proizvodi/antonio_klesarstvo-10-980x653.jpg",
+          thumb: "images/proizvodi/antonio_klesarstvo-10-980x653.jpg",
+          caption: "The Woods",
+        },
+        {
+          full: "images/proizvodi/dvostruki_grobovi.jpg",
+          thumb: "images/proizvodi/dvostruki_grobovi.jpg",
+          caption: "Cinque Terre",
+        },
+        {
+          full: "images/proizvodi/spomenici-32-1024x577.jpg",
+          thumb: "images/proizvodi/spomenici-32-1024x577.jpg",
+          caption: "Mountains and fjords",
+        },
+        {
+          full: "images/proizvodi/SPOMENIK-BR.04.jpg",
+          thumb: "images/proizvodi/SPOMENIK-BR.04.jpg",
+          caption: "Northern Lights",
+        },
+        {
+          full: "images/proizvodi/antonio_klesarstvo-10-980x653.jpg",
+          thumb: "images/proizvodi/antonio_klesarstvo-10-980x653.jpg",
+          caption: "Nature and sunrise",
+        },
+        {
+          full: "images/proizvodi/dvostruki_grobovi.jpg",
+          thumb: "images/proizvodi/dvostruki_grobovi.jpg",
+          caption: "Snowy Mountains",
+        },
+      ];
+
+      // Select the swiper wrapper
+      const swiperWrapper = document.querySelector(".swiper-wrapper");
+
+      // Generate slides
+      images.forEach((img) => {
+        const slide = document.createElement("div");
+        slide.classList.add("swiper-slide");
+
+        const imageElement = document.createElement("img");
+        imageElement.src = img.full;
+        imageElement.alt = img.caption;
+        imageElement.style.width = "100%";
+
+        slide.appendChild(imageElement);
+        swiperWrapper.appendChild(slide);
+      });
+
+      // Initialize Swiper
+      const swiper = new Swiper(".swiper", {
+        loop: true, // Enable continuous loop mode
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // Optional parameters
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        effect: "fade", // You can change this to 'slide', 'cube', 'coverflow', etc.
+        fadeEffect: {
+          crossFade: true,
+        },
+      });
+    </script>
+
+    <!-- List of images for stones and products -->
+    <script>
+      const stoneImages = [
+        "1ed68fe5deedfdd627726f302476611d2624dfbd-ROSSO-PORINO.jpeg",
+        "4fc2def84c3c82a25f80e4fb3894d00c39c933c2-ROSSO-PORTUGALO.jpg",
+        "6bfca3a1cb77e6ec90cfdfc2fe56472c1e599db9-CARRARA.jpeg",
+        "7c6e4d06563605cd5ad3f0781f7288ff01d3c42c-VIZAK-BLUE.jpeg",
+        "45bcfa332048689f90c92573240791c80fb6afbd-VERDE-GUATEMALA.jpeg",
+        "67ca798418f7ab31143e64f0a9f6f8f0fb95535a-MULTICOLOR.jpeg",
+        "76f77870ec6e181f377bb7a16862398e4f1549cf-VERDE-MARITAKA.jpeg",
+        "77f494cc19bcd67cd4359b66e505811a5cd6c05b-KASHMIRE-WHITE.jpeg",
+        "91eeed64657770e97dc27a2da5ed52a5083857ef-ROSSA-BETA.jpeg",
+        "561ad16b22790aee5ea5b9b14c2a000fb66e22cf-IMPALA.jpg",
+        "827e21c8a6c87c6dc46ecf6a34ce8ebd1890c8bf-SILVIA-ORO.jpeg",
+        "13830b5ea82a0f3fce81cb16a34fc7eade78f12e-ROSSO-VERONA.jpeg",
+        "40055ab990a109188dfc450e9e14962f3881a820-SIVAKASHI-(IVORY-BROWN).jpeg",
+        "164020ff2333dabc31582da5c2f9486531d25ce8-LABRADOR-(BLUE-PEARL).jpeg",
+        "546522ffe75d6f669e036b48fef7a8155fa384cc-BIANCO-KRISTALO.jpeg",
+        "94058383669d15239c94a3d498cfaa5e5e6afa36-NERO-ZIMBABWE.jpg",
+        "b7d89c9f3248437fe32a01e600f90e9479e325d8-BIANCO-SARDO.jpeg",
+        "b8b3b5cedff2a34c8103386b16105a996616d30b-ROSSO-GHIANDONE.jpg",
+        "b253c52030da8c487187b55a9f5702e8086353cc-BALTIC-BROWN.jpeg",
+        "bab5e88ab81f5c2634d73b99009b9ff50700309b-CREMA-EXTREMOS.jpeg",
+        "bf7d0e54c484c1f5a6c5515c022bc46e0c757c51-GIALLO-VENEZIA.jpg",
+        "c5a6617a57b5ac568dc745452cc6ff7747e5cd44-BALMORAL.jpeg",
+        "c2979eedf8dfba029409775c2756ebea0c70a89b-MURA.jpeg",
+        "c16398f3030639039bd39b1e57504e1c04db6dad-ROSSO-BAROCO.jpeg",
+        "c31214c1e9ab73a4f199d2b84c73898089b1bffe-GRIGIO-SARDO.jpeg",
+        "ccf30e7b658c154f3852fa0884a07e4aadaa11cb-SILVER WHITE.jpeg",
+        "d163b8eb2d8561e914f3216c3eb16d741817ce6d-JUPARANA-INDIA.jpeg",
+        "d1363882843e779c5a07485e78d6a9c530834e13-AFRICA-RED.jpeg",
+        "e941d76ad7b8cdcf536a504be93dfaf69bbdc3e7-NEW-KRISTAL.jpeg",
+        "ece18282cc65e9ba836083d16d7bc5fa18feb306-NERO-ASSOLUTO.jpg",
+        "ee6c39b4c353930c6b1b58daf9e6ade5a606fb4a-VERDE-FOREST.jpeg",
+        "f8fa287a2e46a24df5b54d9f047d91a732ee0623-SIVAC-MAKEDONSKI.jpeg",
+        "sample.jpg",
+      ];
+
+      // Function to dynamically load images into a container
+      function loadImages(list, path, containerId, isCircular) {
+        const container = document.getElementById(containerId);
+        list.forEach((item) => {
+          const { filename, name = "" } =
+            typeof item === "string" ? { filename: item, name: "" } : item;
+          const fig = document.createElement("figure");
+          fig.className = "stone-item";
+          const img = document.createElement("img");
+          img.src = `${path}/${filename}`;
+          img.alt = name;
+          if (isCircular) img.classList.add("circle-crop");
+          const caption = document.createElement("figcaption");
+          caption.textContent = name;
+          fig.append(img, caption);
+          container.appendChild(fig);
+        });
+      }
+
+      // 1) fetch the JSON file
+      fetch("/stoneImages.json")
+        .then((res) => res.json())
+        .then((stoneImages) => {
+          // 2) now call your existing loader
+          loadImages(stoneImages, "images/vrstaKamena", "stone-images", true);
+        })
+        .catch((err) => console.error("Failed to load images:", err));
+
+      // Load product images dynamically
+      loadImages(productImages, "images/proizvodi", "product-images");
+    </script>
+
+    <!-- Corrected CSS -->
+    <style>
+      /* 1. Your existing grid & sizing */
+      .stone-images {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 0.1rem;
+        justify-items: center;
+      }
+      .stone-item {
+        width: 100%; /* changed from 10% so it matches its grid cell */
+        max-width: 120px;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+      .stone-item:hover {
+        transform: scale(1.1);
+      }
+
+      /* 2. Caption: single-line with ellipsis, locked height */
+      .stone-item figcaption {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        color: #333;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.3s ease, max-height 0.3s ease;
+      }
+
+      /* 3. On hover: allow full text + expand */
+      .stone-item:hover figcaption {
+        opacity: 1; /* fade in text */
+        max-height: 5em; /* allow up to ~5 lines — adjust as needed */
+      }
+
+      .swiper {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+      }
+
+      .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background-color: #ffffff;
+      }
+
+      .circle-crop {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .stone-images,
+      .product-images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .product-images img {
+        width: 200px; /* Set a consistent width */
+        height: 200px; /* Set a consistent height */
+        object-fit: cover; /* Ensure the image fits within the dimensions */
+        border-radius: 10px; /* Optional: Add rounded corners */
+        margin: 5px; /* Add spacing between images */
+      }
+    </style>
+  </body>
+</html>
