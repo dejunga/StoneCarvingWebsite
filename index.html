@@ -443,7 +443,7 @@
         transition: transform 0.3s ease;
       }
       .stone-item:hover {
-        transform: scale(1.1);
+        transform: scale(1.3);
       }
 
       /* 2. Caption: single-line with ellipsis, locked height */
@@ -460,7 +460,11 @@
       /* 3. On hover: allow full text + expand */
       .stone-item:hover figcaption {
         opacity: 1; /* fade in text */
-        max-height: 5em; /* allow up to ~5 lines — adjust as needed */
+        max-height: 5em;
+
+        background-color: white;
+        padding: 0.25em 0.5em;
+        border-radius: 0.25em;
       }
 
       .swiper {
@@ -487,7 +491,9 @@
       .product-images {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 0px;
+        align-content: center;
+        justify-content: space-evenly;
       }
       .product-images img {
         width: 200px; /* Set a consistent width */
